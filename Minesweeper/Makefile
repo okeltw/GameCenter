@@ -1,8 +1,8 @@
 CC=g++
 STD=-std=c++11
 
-Cell: Cell.cpp
-	$(CC) $(STD) Cell.cpp -o Cell
-	
+Minesweeper: Minesweeper.cpp Board.cpp
+	$(CC) $(STD) Board.cpp Minesweeper.cpp -o Minesweeper
+
 clean:
-	rm *o Cell
+	rm *o Minesweeper
