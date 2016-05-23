@@ -23,14 +23,9 @@ A classic game where the player is presented with a board size of their choosing
 [TODO - Expound, after the game is written]
 This section contains the logic of the objects that make up the game.
 
-#### The Cell Object
-Contains information about what the cell holds (number or mine; private data), as well as what is currently displayed (public)
 
 #### The Board Object
-Extends Cells into a matrix. Provides testing and flagging functionality.
+A simple gameboard. Provides testing and flagging functionality.
 
 #### The Minesweeper Object
 Extends the board into a UI.  Provides new game, scorekeeping, and other functions.
-
-
-
