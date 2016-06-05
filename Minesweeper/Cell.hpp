@@ -3,31 +3,20 @@
 
 class Cell {
 public:
+  Cell();           // Blank cell
+  Cell(char);       // Blank cell with set display (DEBUG)
   Cell(bool);       // Set mine
   Cell(bool,bool);  // Set mine, flag
 
   char test();
   void flag();
   char display;
-
-protected:
   void mine();
-
-private:
-  struct Proximity {
-    bool mineNW;
-    bool mineN;
-    bool mineNE;
-    bool mineE;
-    bool mineSE;
-    bool mineS;
-    bool mineSW;
-    bool mineW;
-  };
+  void incProximity();
 
   bool isMine;
   bool isFlagged;
-  int numNearMines;
-}
+  int  proximity;
+};
 
 #endif
